@@ -102,9 +102,7 @@ jobs:
             # Assume you have script for run start in production and restart in production
             # Check if the PM2 process is running
 
-            ls -la /home/ubuntu/apps/build
-
-            if pm2 show your-service-name > /dev/null; then
+            if pm2 show product-service > /dev/null; then
               echo "Application is running. Restarting..."
               yarn restart
             else
