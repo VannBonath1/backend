@@ -97,9 +97,13 @@ jobs:
 
             cd /home/ubuntu/apps/build
             yarn install --production
+
             # Assume PM2 is used, Replace with other command for other process manager
             # Assume you have script for run start in production and restart in production
             # Check if the PM2 process is running
+
+            ls -la /home/ubuntu/apps/build
+
             if pm2 show your-service-name > /dev/null; then
               echo "Application is running. Restarting..."
               yarn restart
