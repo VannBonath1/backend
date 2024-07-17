@@ -92,15 +92,20 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
+            source /home/ubuntu/.nvm/nvm.sh
+            source /home/ubuntu/.profile
+
             cd /home/ubuntu/apps/build
             yarn install --production
-            # Assume PM2 is used, Replace with other command for other process manager
-            # Assume you have script for run start in production and restart in production
+
+            # Debug: List files after installation
+            ls -la /home/ubuntu/apps/build
+
             # Check if the PM2 process is running
-            if pm2 show your-service-name > /dev/null; then
+            if pm2 show auth > /dev/null; then
               echo "Application is running. Restarting..."
-              yarn restart
+              pm2 restart auth
             else
               echo "Application is not running. Starting..."
-              yarn start
+              pm2 start yarn --name auth -- start
             fi
