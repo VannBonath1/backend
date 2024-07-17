@@ -1,6 +1,5 @@
 name: CI
 
-
 on:
   push:
     branches:
@@ -93,15 +92,25 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
+            # Install Node.js and Yarn
+            curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+            sudo apt-get install -y nodejs
+            npm install -g yarn
+            
+            # Install PM2
+            yarn global add pm2
+
+            # Change to the build directory
             cd /home/ubuntu/apps/build
+            
+            # Install dependencies
             yarn install --production
-            # Assume PM2 is used, Replace with other command for other process manager
-            # Assume you have script for run start in production and restart in production
-            # Check if the PM2 process is running
+            
+            # Check if PM2 is running the application
             if pm2 show your-service-name > /dev/null; then
               echo "Application is running. Restarting..."
-              yarn restart
+              pm2 restart your-service-name
             else
               echo "Application is not running. Starting..."
-              yarn start
+              pm2 start your-main-file.js --name your-service-name
             fi
