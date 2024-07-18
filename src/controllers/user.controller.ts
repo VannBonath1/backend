@@ -39,7 +39,7 @@ export class UserController extends Controller {
       throw error;
     }
   }
-
+  // /b1/iser?gilter={}
   @Get("/GetAllUsers/{sortOption}")
   public async getAllUsers(
     @Path("sortOption") sortOption: string,

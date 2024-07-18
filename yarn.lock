@@ -1010,12 +1010,12 @@
   resolved "https://registry.npmjs.org/@tsconfig/node16/-/node16-1.0.4.tgz"
   integrity sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==
 
-"@tsoa/cli@^6.3.1":
-  version "6.3.1"
-  resolved "https://registry.npmjs.org/@tsoa/cli/-/cli-6.3.1.tgz"
-  integrity sha512-KOlsShmAZ8Ju8KCkBFFzdURlGa9YNgf6gAvU6GwnOQl7mcvqvKMk8IDy2bcotpqNcabHo6fbkeExztF/n0Z0kg==
+"@tsoa/cli@^6.4.0":
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/@tsoa/cli/-/cli-6.4.0.tgz#292caca9af23acf7bf9f0e051a1516f97bfd0ce3"
+  integrity sha512-cuKqIAJ33enhXejMb04P2JF/SZdM3WLFE9Qg8s2dOVOrLbbZGK3H85YSORif0unxbre02psXuUyl3FwWBt0/pQ==
   dependencies:
-    "@tsoa/runtime" "^6.3.0"
+    "@tsoa/runtime" "^6.4.0"
     "@types/multer" "^1.4.11"
     fs-extra "^11.2.0"
     glob "^10.3.10"
@@ -1028,10 +1028,10 @@
     yaml "^2.4.1"
     yargs "^17.7.1"
 
-"@tsoa/runtime@^6.3.0":
-  version "6.3.0"
-  resolved "https://registry.npmjs.org/@tsoa/runtime/-/runtime-6.3.0.tgz"
-  integrity sha512-9z/0ePKpSoYpUq1IJvihk4FcgpAkyMTEEl9oFLiL9p5SE86ndsGJdH3kt/IyqtD3wajPSykMRHlAidrGUyLuNQ==
+"@tsoa/runtime@^6.4.0":
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/@tsoa/runtime/-/runtime-6.4.0.tgz#9bad66ec812a8118b7376ebb6c6c9502fc5eff3c"
+  integrity sha512-oiVVK++Svo8KMRVTfOQxtepPQRCpPh8bCmPpmNFePGZYJAtZ8XX1cm8Zs/v87dZZmNEooU6egj1G40ive/9phw==
   dependencies:
     "@hapi/boom" "^10.0.1"
     "@hapi/hapi" "^21.3.3"
@@ -3696,12 +3696,12 @@ supports-preserve-symlinks-flag@^1.0.0:
 
 swagger-ui-dist@>=5.0.0:
   version "5.17.14"
-  resolved "https://registry.npmjs.org/swagger-ui-dist/-/swagger-ui-dist-5.17.14.tgz"
+  resolved "https://registry.yarnpkg.com/swagger-ui-dist/-/swagger-ui-dist-5.17.14.tgz#e2c222e5bf9e15ccf80ec4bc08b4aaac09792fd6"
   integrity sha512-CVbSfaLpstV65OnSjbXfVd6Sta3q3F7Cj/yYuvHMp1P90LztOLs6PfUnKEVAeiIVQt9u2SaPwv0LiH/OyMjHRw==
 
 swagger-ui-express@^5.0.1:
   version "5.0.1"
-  resolved "https://registry.npmjs.org/swagger-ui-express/-/swagger-ui-express-5.0.1.tgz"
+  resolved "https://registry.yarnpkg.com/swagger-ui-express/-/swagger-ui-express-5.0.1.tgz#fb8c1b781d2793a6bd2f8a205a3f4bd6fa020dd8"
   integrity sha512-SrNU3RiBGTLLmFU8GIJdOdanJTl4TOmT27tt3bWWHppqYmAZ6IDuEuBvMU6nZq0zLEe6b/1rACXCgLZqO6ZfrA==
   dependencies:
     swagger-ui-dist ">=5.0.0"
@@ -3806,13 +3806,13 @@ tsconfig-paths@^4.2.0:
     minimist "^1.2.6"
     strip-bom "^3.0.0"
 
-tsoa@^6.3.1:
-  version "6.3.1"
-  resolved "https://registry.npmjs.org/tsoa/-/tsoa-6.3.1.tgz"
-  integrity sha512-w2INTVkjqQDlWo5aLv/ZIVAgWSfOOUstOW1WWVYOa+9mY2Er/W9E9BcBpIdaoJ5BtUZimhhhs5BQ2Nn76OfQpw==
+tsoa@^6.4.0:
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/tsoa/-/tsoa-6.4.0.tgz#5bf1089efc173bc78b694d6a4d30a85c6469920d"
+  integrity sha512-bgNJrpkoTRjbFo/3S3fH+wh9mXTbTAJkzfUXgsAFZJNaDr1+tmiEaP3OO4AbjH0i1acKu9HTTmok3tWau4T83Q==
   dependencies:
-    "@tsoa/cli" "^6.3.1"
-    "@tsoa/runtime" "^6.3.0"
+    "@tsoa/cli" "^6.4.0"
+    "@tsoa/runtime" "^6.4.0"
 
 type-detect@4.0.8:
   version "4.0.8"

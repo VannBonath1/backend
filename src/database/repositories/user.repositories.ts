@@ -11,15 +11,12 @@ export class UserRepository {
     }
   }
 
-  public async GetAllUsers(sortOption: string, age?: number): Promise<IUser[]> {
+  public async GetAllUsers(
+    _sortOption: string,
+    _age?: number
+  ): Promise<IUser[]> {
     try {
-      const allUsers = await UserModel.find({ age: age }).sort(
-        sortOption === "name"
-          ? { name: 1 }
-          : sortOption === "age"
-          ? { age: 1 }
-          : ""
-      );
+      const allUsers = await UserModel.find();
       return allUsers;
     } catch (error) {
       throw error;
