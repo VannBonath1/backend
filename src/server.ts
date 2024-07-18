@@ -1,7 +1,7 @@
 import app from "@/src/app";
 import configs from "@/src/config";
 import connectToDatabase from "./database/connection";
-
+//
 function run() {
   connectToDatabase();
   app.listen(configs.port, () => {
